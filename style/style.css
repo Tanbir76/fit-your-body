@@ -7,7 +7,6 @@
 	box-sizing: border-box;
 }
 body{
-	/* background-color: black; */
 	font-family: Inter;
 }
 .nav-fit-container{
@@ -174,7 +173,101 @@ padding: 10px 10px 16px 24px;
 .card-text{
 	margin-left: 40px;
 }
+/* habits-section-style  */
+.habits-section{
+	width: 100%;
+	text-align: center;
+	margin: 0px;
+	background-color: rgb(15, 13, 13);
+	padding: 50px;
+}
+.habit-title{
+	flex-basis: 671px;
+	/* background-color: black; */
+	text-align: center;
+}
+.habit-title h3{
+	font-size:3rem ;
+	font-weight: 900;
+	color: white;
+	margin-top:0px;
+
+}
+.habit-title p{
+	font-size: 0.85rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.5);
+	margin-bottom: 20px;
+}
+.habit-container{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.habit-card{
+	flex-basis: 231px;
+}
+.habit-card-photo img{
+  border-radius: 50%;
+
+}
+.habit-card h4{
+	font-size: 1.25rem;
+	font-weight: 600px;
+	color: white;
+	margin-bottom: 2px;
+}
+.habit-card p{
+	font-size: 0.85rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.5);
+}
+/* run-section-style-here  */
+.run-section{
+	width: 100%;
+	/* border: 2px solid red; */
+	padding: 2% 10% 2% 10%;
+  background-color:rgb(15, 13, 13);
+	box-sizing: border-box;
+
+}
+.run-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 18px;
+background: rgb(34, 34, 34);
+padding: 2%;
+
+
+}
+.run-content{
+	flex-basis: 443px;
+
+
+}
+.run-content h3{
+	font-size: 3rem;
+	font-weight: 900;
+	color: white;
+}
+.run-content p{
+	font-size: 1rem;
+	font-weight: 400;
+	color: white;
+}
+.run-boy-photo{
+flex-basis: 366px;
+
+}
+.run-boy-photo img{
+	width: 100%;
+	border-radius: 18px;
+}
+
 /* universal style  */
+
 
 
 @media screen and (max-width: 576px) {
@@ -206,6 +299,30 @@ padding: 10px 10px 16px 24px;
 		position: absolute;
 		bottom: 42%;
 		right: 52%;
+	}
+	.habit-card{
+		margin-top: 15px;
+	}
+	.run-section{
+		padding: 4%;
+	}
+	.run-container{
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 20px;
+	}
+	.nav-fit-container{
+	padding: 0% 8% 0% 8%;
+	}
+	.run-content{
+		flex-basis: 0px;
+		margin-bottom: 20px;
+	}
+	.run-boy-photo{
+		flex-basis: 0px;
+	}
+	.join-btn{
+	  width: 100%;
 	}
 	
 }
