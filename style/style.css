@@ -13,14 +13,15 @@ body{
 	width:100%;
 	display: flex;
 	justify-content: space-between;
-  padding: 0% 14% 0% 14%;
 	align-items: center;
 	background-color: rgb(0, 0, 0);
+  padding: 2% 14% 2% 14%;
 }
 .nav-fit h1{
 	color:rgba(230, 83, 60);
 	font-size: 2.5rem;
 	font-weight: 800;
+	margin-top: 0px;
 	margin-left: 20%;
 	
 }
@@ -176,7 +177,7 @@ padding: 10px 10px 16px 24px;
 	text-align: center;
 	margin: 0px;
 	background-color: rgb(15, 13, 13);
-	padding: 2% 14% 2% 14%;
+	padding: 2% 13% 2% 13%;
 }
 .habit-title{
 	flex-basis: 671px;
@@ -223,7 +224,7 @@ padding: 10px 10px 16px 24px;
 /* run-section-style-here  */
 .run-section{
 	width: 100%;
-	padding: 2% 14% 2% 14%;
+	padding: 2% 13% 2% 13%;
   background-color:rgb(15, 13, 13);
 	box-sizing: border-box;
 
@@ -264,7 +265,7 @@ flex-basis: 366px;
 /* team-style-here */
 .team-section{
 	width: 100%;
-	padding: 2% 14% 2% 14%;
+	padding: 2% 13% 2% 13%;
   background-color:rgb(15, 13, 13);
 	box-sizing: border-box;
 	
@@ -288,21 +289,35 @@ flex-basis: 366px;
 .trainer-container{
   display:grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
+	gap: 15px;
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 18px;
 	margin: 0px;
-	padding: 20px;
+	padding: 15px;
 } 
 .trainer-card{
-	filter: blur(0.585px);
 	height: 337px;
+	position: relative;
+
+	}
+	.linear-gradient{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		background-image:linear-gradient(180deg,
+		rgba(44, 28, 28, 0.26), rgb(13, 20, 13));
+		opacity: 0.5;
+		border-radius: 18px;
+		top: 0;
+		left: 0;
 	}
 .trainer-card img{
 	width: 100%;
 	height: 100%;
+	object-fit: cover;
 	border-radius: 18px;
-	position: relative;
+	z-index: -1;
+
 
 }
 .trainer-card h4{
@@ -310,13 +325,51 @@ flex-basis: 366px;
 	position: absolute;
 	top: 80%;
 	 margin-left: 10px; 
+	 
 }
 .trainer-card p{
 	position: absolute;
 	color:rgba(255, 255, 255, 0.5);
 	top: 90%;
 	margin-left: 10px;
+	z-index: 1;
+}
+/* footer-section-style */
+ footer{
+	margin-top: 0px;
+  background-color: rgba(39, 32, 32, 0.932);
+	padding: 2% 13% 1% 13%;
+}
+.footer-container{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.footer-content h1{
+	margin-top: 20px;
+	font-size: 3rem;
+	color:rgba(230, 83, 60);
+	font-weight: 900;
+}
+.footer-text{
+	font-size: 1rem;
+  font-weight: 400; 
+	color: rgba(255, 255, 255, 0.5) ;
+}
+.footer-content p{
+color: rgba(255, 255, 255, 0.5);
+}
 
+.footer-content h4{
+	color: white;
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+.last-item-footer{
+	text-align: center;
+	margin-top: 20px;
+	color: rgba(255, 255, 255, 0.5);
 }
 /* universal style  */
 
@@ -327,7 +380,7 @@ flex-basis: 366px;
 		display: none;
 	}
 	.nav-fit-container{
-		padding: 0% 5% 0% 5%;
+		padding: 0% 6% 0% 6%;
 	}
 	/* banner-section */
 	.banner-section{
@@ -352,6 +405,12 @@ flex-basis: 366px;
 		bottom: 42%;
 		right: 52%;
 	}
+	.habit-container{
+		justify-content: space-evenly;
+	}
+	.habit-title{
+		margin-top: 50px;
+	}
 	.habit-card{
 		margin-top: 15px;
 	}
@@ -363,9 +422,7 @@ flex-basis: 366px;
 		justify-content: space-between;
 		padding: 20px;
 	}
-	.nav-fit-container{
-	padding: 0% 8% 0% 8%;
-	}
+	
 	.run-content{
 		flex-basis: 0px;
 		margin-bottom: 20px;
@@ -376,6 +433,25 @@ flex-basis: 366px;
 	.join-btn{
 	  width: 100%;
 	}
+	.trainer-container{
+		grid-template-columns: repeat(1, 1fr);
+
+	}
+	.team-section{
+		padding: 4%;
+	}
+	.team-header h1{
+		margin-top: 0px;
+	}
+	footer{
+		padding: 2% 4% 1% 4%;
+	}
+	.footer-container{
+		flex-direction: column;
+	}
+
+	
+
 	
 }
 @media screen and (min-width: 576px)  {
