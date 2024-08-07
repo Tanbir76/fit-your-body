@@ -226,7 +226,6 @@ padding: 10px 10px 16px 24px;
 /* run-section-style-here  */
 .run-section{
 	width: 100%;
-	/* border: 2px solid red; */
 	padding: 2% 10% 2% 10%;
   background-color:rgb(15, 13, 13);
 	box-sizing: border-box;
@@ -264,6 +263,25 @@ flex-basis: 366px;
 .run-boy-photo img{
 	width: 100%;
 	border-radius: 18px;
+}
+/* team-style-here */
+.team-section{
+	/* background-color: black; */
+	width: 100%;
+	border: 2px solid red;
+	padding: 2% 10% 2% 10%;
+  background-color:rgb(15, 13, 13);
+	box-sizing: border-box;
+	
+}
+.team-header{
+	text-align: center;
+}
+.team-header h1{
+	color: white;
+}
+.team-header p{
+	color: rgba(255, 255, 255, 0.5);
 }
 
 /* universal style  */
