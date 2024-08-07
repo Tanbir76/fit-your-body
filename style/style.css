@@ -15,7 +15,7 @@ body{
 	justify-content: space-between;
 	align-items: center;
 	background-color: rgb(0, 0, 0);
-  padding: 2% 14% 2% 14%;
+  padding: 2% 12% 2% 12%;
 }
 .nav-fit h1{
 	color:rgba(230, 83, 60);
@@ -58,12 +58,11 @@ body{
 .banner-section{
 	width: 100%;
 	display: flex;
-	justify-content: space-evenly;
+	padding: 2% 12% 2% 12%;
+	justify-content: space-between;
 	align-items: center;
 	background: linear-gradient(180deg, rgb(0, 0, 0),rgba(2, 2, 2, 0.719) 100%);
-	/* backdrop-filter: blur(60px); */
-	/* background-color: black; */
-	/* position: relative; */
+	
 }
 .banner-content{
 flex-basis: 520px;
@@ -252,7 +251,7 @@ padding: 2%;
 .run-content p{
 	font-size: 1rem;
 	font-weight: 400;
-	color: white;
+	color:rgba(255, 255, 255, 0.5);
 }
 .run-boy-photo{
 flex-basis: 366px;
@@ -262,6 +261,35 @@ flex-basis: 366px;
 	width: 100%;
 	border-radius: 18px;
 }
+/* bmi-small-section-style */
+.bmi-section{
+	background-color: rgb(15, 13, 13);
+	padding-left: 25%;
+	padding: 2% 10% 2% 25%;
+	
+}
+.bmi-section h1{
+	color: white;
+	margin: 0px;
+	font-size: 3rem;
+	font-weight: 900;
+}
+.bmi-section p{
+	color: rgba(255, 255, 255, 0.5);
+	margin: 0px;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
 /* team-style-here */
 .team-section{
 	width: 100%;
@@ -318,7 +346,6 @@ flex-basis: 366px;
 	border-radius: 18px;
 	z-index: -1;
 
-
 }
 .trainer-card h4{
 	color: white;
@@ -335,9 +362,10 @@ flex-basis: 366px;
 	z-index: 1;
 }
 /* footer-section-style */
- footer{
+
+ .footer-section{
 	margin-top: 0px;
-  background-color: rgba(39, 32, 32, 0.932);
+  background-color: rgba(22, 17, 17, 0.747);
 	padding: 2% 13% 1% 13%;
 }
 .footer-container{
