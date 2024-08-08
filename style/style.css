@@ -62,6 +62,7 @@ body{
 	justify-content: space-between;
 	align-items: center;
 	background: linear-gradient(180deg, rgb(0, 0, 0),rgba(2, 2, 2, 0.719) 100%);
+ position: relative;
 	
 }
 .banner-content{
@@ -110,11 +111,6 @@ flex-basis: 520px;
  font-size: 5rem;
  font-weight: 400;
 }
-
-.banner-body-vai{
-	position: relative;
-}
-
 .banner-body-vai img{
 	width: 100%;
 	height: 100%;
@@ -127,12 +123,11 @@ flex-basis: 520px;
 border-radius: 12px;
 backdrop-filter: blur(20px);
 background: rgba(48, 48, 48, 0.54);
-/* background-color: white; */
 padding: 10px 10px 16px 24px;
 }
 .position1{
 	position: absolute;
-	left: 65%;
+	left: 80%;
 	top: 20%;
 }
 
@@ -164,8 +159,8 @@ padding: 10px 10px 16px 24px;
 
 .position2{
 	position: absolute;
-	bottom: 12%;
-	right: 80%;
+	bottom: 14%;
+	left: 58%;
 }
 .card-text{
 	margin-left: 40px;
@@ -263,7 +258,7 @@ flex-basis: 366px;
 }
 /* bmi-small-section-style */
 .bmi-section{
-	background-color: rgb(15, 13, 13);
+	background-color: rgb(14, 11, 11);
 	padding-left: 25%;
 	padding: 2% 10% 2% 25%;
 	
@@ -279,6 +274,131 @@ flex-basis: 366px;
 	margin: 0px;
 	font-size: 1rem;
 	font-weight: 400;
+}
+/* bmi-larze-divice-style-now */
+.bmi-container{
+	padding: 2% 14% 2% 14%;
+	display: flex;
+	justify-content: space-between;
+	background-color:rgba(7, 5, 5, 0.911);
+}
+.bmi-chart{
+	width: 25%;
+}
+.bmi-container h3{
+	color: white;
+	margin: 0;
+	font-size: 2rem;
+	font-weight: 700;
+	text-wrap: nowrap;
+	margin-bottom: 20px;
+}
+table, th, td{
+	width:100%;
+	border: 1px solid rgba(231, 227, 227, 0.247);
+	border-collapse: collapse;
+	margin: 0;
+	padding: 5px 10px 5px 10px;
+	margin: 0px;
+}
+td{
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-wrap: nowrap;
+	color: rgba(255, 255, 255, 0.5);
+	
+}
+th{
+	color:white;
+	font-size:1.50rem ;
+	font-weight: 500;
+	text-wrap: nowrap;
+}
+.from-section {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	gap: 5px;
+	
+  
+}
+.calculate-bmi{
+	width: 50%;
+}
+.calculate-bmi h3{
+	color: white;
+	margin: 0;
+	font-size: 2rem;
+	font-weight: 700;
+	text-wrap: nowrap;
+}
+.calculate-bmi p{
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: rgba(255, 255, 255, 0.5);
+	
+
+}
+.from-section, input{
+	color: rgba(255, 255, 255, 0.5);
+
+}
+select{
+	border-style: none;
+}
+input{
+	border-style: none;
+	border-radius: 6px;
+	padding: 2%;
+	
+}
+.fast{
+	 grid-column: span 4;
+	 background-color: rgba(255, 255, 255, 0.1);
+	 font-size: 1.5rem;
+	font-weight: 500;
+	
+	
+}
+.second{
+	grid-column: span 4;
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-wrap: nowrap;
+	/* color: rgba(255, 255, 255, 0.1); */
+	background-color: rgba(255, 255, 255, 0.1);
+
+	
+}
+.threed{
+	grid-column: span 4;
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-wrap: nowrap;
+	/* color: rgba(255, 255, 255, 0.5); */
+	background-color: rgba(255, 255, 255, 0.1);
+	
+}
+.fourth{
+	grid-column: span 4;
+	padding: 2%;
+	border-radius: 6px;
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-wrap: nowrap;
+	/* color: rgba(255, 255, 255, 0.5); */
+	background-color: rgba(255, 255, 255, 0.1);
+	
+}
+.five{
+	grid-column: span 8;
+	padding: 1%;
+	border-radius: 6px;
+	font-size: 1.50rem;
+	font-weight: 400;
+	text-wrap: nowrap;
+	/* color: rgba(255, 255, 255, 0.5); */
+	background-color: rgba(255, 255, 255, 0.1);
+	
 }
 
 
@@ -365,7 +485,7 @@ flex-basis: 366px;
 
  .footer-section{
 	margin-top: 0px;
-  background-color: rgba(22, 17, 17, 0.747);
+  background-color: rgba(7, 5, 5, 0.911);
 	padding: 2% 13% 1% 13%;
 }
 .footer-container{
@@ -424,14 +544,14 @@ color: rgba(255, 255, 255, 0.5);
 		
 	}
 	.position1{
-		top: 8%;
-		left: 54%;
+		top: 52%;
+		left: 52%;
 		
 	}
 	.position2{
 		position: absolute;
-		bottom: 42%;
-		right: 52%;
+		bottom: 22%;
+		left: 20%;
 	}
 	.habit-container{
 		justify-content: space-evenly;
@@ -471,20 +591,27 @@ color: rgba(255, 255, 255, 0.5);
 	.team-header h1{
 		margin-top: 0px;
 	}
-	footer{
-		padding: 2% 4% 1% 4%;
+	.footer-section{
+		padding: 5%;
 	}
+	
 	.footer-container{
 		flex-direction: column;
 	}
-
-	
-
-	
+	.bmi-container{
+   flex-direction: column;
+	 gap: 30px;
+	 padding: 4%;
+	}
+	.calculate-bmi{
+   width: 80%;
+ }
+ .bmi-chart{
+	width: 100%;
+ }
 }
-@media screen and (min-width: 576px)  {
+@media screen and (min-width: 576px) {
 	.small-device-nav{
 		display: none;
 	}
-	
 }
