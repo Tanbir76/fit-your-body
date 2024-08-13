@@ -177,7 +177,7 @@ padding: 10px 10px 16px 24px;
 	width: 100%;
 	text-align: center;
 	margin: 0px;
-	background-color: rgb(15, 13, 13);
+	background-color: black;
 	padding: 2% 13% 2% 13%;
 }
 .habit-title{
@@ -222,11 +222,106 @@ padding: 10px 10px 16px 24px;
 	font-weight: 400;
 	color: rgba(255, 255, 255, 0.5);
 }
+ /* exercise-secition-style */
+ .exercise-section{
+	background-color: black;
+  padding: 2% 12% 2% 12%;
+	text-align: center;
+	
+ }
+ .exercise-container{
+	display: flex;
+	justify-content: space-around;
+ }
+ .learn-content h1{
+	margin: 0;
+	padding: 0;
+	font-size: 2.5rem;
+	font-weight: 800;
+	margin-top: 20px;
+	margin-bottom: 10px;
+ }
+ .learn-content p{
+	font-size: 0.85rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.5);
+	margin-bottom: 20px;
+ }
+ .box{
+	width: 340px;
+  height: 220px;
+	position: relative;
+	border-radius: 20px;
+
+ }
+ .box iframe{
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	top: 0;
+	left: 0;
+	border-radius: 20px;
+	position: absolute;
+	padding: 5px;
+	z-index: 2;
+	
+	
+ }
+ @property --angle{
+	syntax:  "<angle>";
+	initial-value: 0deg;
+	inherits: false;
+ }
+ .box::after, .box::before{
+	
+	content: '';
+	height: 100%;
+	width: 100%;
+	background-image:  conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095);
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	z-index: 1;
+	border-radius: 20px;
+	/* padding: 40px; */
+	animation: rotate 4s linear infinite;
+ }
+ .box::before{
+	filter: blur(2.5rem);
+	opacity: 0.4;
+ }
+ @keyframes rotate{
+	from{
+		--angle:0deg;
+
+	}
+	to{
+    --angle:360deg;
+	}
+ }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* run-section-style-here  */
 .run-section{
 	width: 100%;
 	padding: 2% 13% 2% 13%;
-  background-color:rgb(15, 13, 13);
+  background-color:black;
 	box-sizing: border-box;
 
 }
@@ -263,9 +358,10 @@ flex-basis: 366px;
 	width: 100%;
 	border-radius: 18px;
 }
+
 /* bmi-small-section-style */
 .bmi-section{
-	background-color: rgb(14, 11, 11);
+	background-color: black;
 	padding-left: 25%;
 	padding: 2% 10% 2% 25%;
 	
@@ -422,7 +518,7 @@ input{
 .team-section{
 	width: 100%;
 	padding: 2% 13% 2% 13%;
-  background-color:rgb(15, 13, 13);
+  background-color:black;
 	box-sizing: border-box;
 	
 }
@@ -620,6 +716,14 @@ color: rgba(255, 255, 255, 0.5);
  }
  .bmi-chart{
 	width: 70%;
+ }
+ .exercise-container{
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+ }
+ .exercise-section{
+	padding: 4%;
  }
 }
 @media screen and (min-width: 576px) {

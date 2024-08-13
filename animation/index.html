@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation webpage</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      width: 100%;
+      height: 100vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+    }
+    .box{
+      width: 400px;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      margin-left: 40px;
+      border-radius: 16px;
+      position: relative;
+    }
+    /* .box h1{
+      margin: 0;
+      padding: 0;
+      font-size: 2rem;
+      font-weight: 800;
+      position: absolute;
+      z-index: 2;
+
+    } */
+     .box iframe{
+      position: absolute;
+       z-index: 1;
+       padding:5px;
+      /* overflow: hidden;
+      background-color: none;
+      display: flex;  */
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      border-radius: 16px;
+      
+  
+     }
+     .box::after, .box::before{
+      content: '';
+      position: absolute;
+      width: 200%;
+      height:50%;
+      background-image: conic-gradient(red, rgb(63, 205, 205));
+      border-radius: 16px;
+      animation: rotate 4s linear infinite;
+    }
+    .box::before{
+      filter: blur(1.5rem);
+      opacity: 3px;
+    }
+    
+    
+    
+    
+    @keyframes rotate {
+      from{
+        transform: rotate(0deg);
+      }
+      to{
+        transform: rotate(360deg);
+      }
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+    <div class="box">
+      <iframe src="https://www.youtube.com/embed/kIDJYiUdy0A?si=IyxYd2QuwOwNStSL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="box">
+      <iframe src="https://www.youtube.com/embed/kIDJYiUdy0A?si=IyxYd2QuwOwNStSL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="box">
+      <iframe src="https://www.youtube.com/embed/kIDJYiUdy0A?si=IyxYd2QuwOwNStSL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
