@@ -193,7 +193,7 @@ padding: 10px 10px 16px 24px;
 
 }
 .habit-title p{
-	font-size: 0.85rem;
+	font-size: 1rem;
 	font-weight: 400;
 	color: rgba(255, 255, 255, 0.5);
 	margin-bottom: 20px;
@@ -236,13 +236,22 @@ padding: 10px 10px 16px 24px;
  .learn-content h1{
 	margin: 0;
 	padding: 0;
+	color: white;
 	font-size: 2.5rem;
 	font-weight: 800;
 	margin-top: 20px;
+ }
+ .learn-content h2{
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-size: 2rem;
+	font-weight: 800;
 	margin-bottom: 10px;
+ 
  }
  .learn-content p{
-	font-size: 0.85rem;
+	font-size: 1rem;
 	font-weight: 400;
 	color: rgba(255, 255, 255, 0.5);
 	margin-bottom: 20px;
@@ -267,17 +276,17 @@ padding: 10px 10px 16px 24px;
 	
 	
  }
+ /* #00ff99 */
  @property --angle{
 	syntax:  "<angle>";
 	initial-value: 0deg;
 	inherits: false;
  }
  .box::after, .box::before{
-	
 	content: '';
 	height: 100%;
 	width: 100%;
-	background-image:  conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095);
+	background-image:  conic-gradient(from var(--angle), #ff4545, rgba(230, 83, 60), #006aff, #ff0095);
 	position:absolute;
 	top: 50%;
 	left: 50%;
@@ -300,22 +309,6 @@ padding: 10px 10px 16px 24px;
     --angle:360deg;
 	}
  }
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* run-section-style-here  */
 .run-section{
@@ -341,6 +334,9 @@ padding: 2%;
 
 }
 .run-content h3{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 10px;
 	font-size: 3rem;
 	font-weight: 900;
 	color: white;
@@ -369,6 +365,7 @@ flex-basis: 366px;
 .bmi-section h1{
 	color: white;
 	margin: 0px;
+	margin-bottom: 10px;
 	font-size: 3rem;
 	font-weight: 900;
 }
@@ -399,7 +396,7 @@ flex-basis: 366px;
 }
 table, th, td{
 	width:100%;
-	border: 1px solid rgba(231, 227, 227, 0.247);
+	border: 1px solid rgba(231, 227, 227, 0.158);
 	border-collapse: collapse;
 	margin: 0;
 	padding: 5px 10px 5px 10px;
@@ -504,15 +501,6 @@ input{
 .six{
 	grid-column: span 1;
 }
-
-
-
-
-
-
-
-
-
 
 /* team-style-here */
 .team-section{
